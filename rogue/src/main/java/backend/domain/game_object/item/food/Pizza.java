@@ -1,0 +1,13 @@
+package backend.domain.game_object.item.food;
+
+import backend.domain.map.MapKeeper;
+import backend.domain.util.ObjectPosition;
+
+public class Pizza extends Food{
+    private final int default_hp = 10;
+    public Pizza(ObjectPosition position, MapKeeper map, int current_level) {
+        super(position, map, current_level);
+        setHp(default_hp * getQuantity() + current_level);
+        setName("Pizza");
+    }
+}
