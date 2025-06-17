@@ -1,5 +1,5 @@
 # Rogue
-Rogue like game with a console interface
+Rogue like game with a console interface, is developed using MVC pattern
 
 It includes:
 - game logic (creatures, items, map generating);
